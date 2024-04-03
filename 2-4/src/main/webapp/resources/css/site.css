@@ -1,0 +1,301 @@
+:root {
+    --user-avatar-size: 50px;
+    --proposal-avatar-size: 80px;
+    --user-profile-avatar-size: 150px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#nav-mobile li a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul.languages-list li {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.meeting-card .card-image {
+    height: 200px;
+}
+
+.meeting-card .date-divider {
+    margin-top: 20px;
+}
+
+.meeting-container .meeting-title {
+    font-size: 30px;
+}
+
+.meeting-container .meeting-description {
+    font-size: 17px;
+}
+
+.user-avatar {
+    width: var(--user-avatar-size);
+    height: var(--user-avatar-size);
+    border-radius: 50%;
+}
+
+.large-text {
+    font-size: 50px;
+}
+
+.time-divider {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+#meeting-form .modal.datepicker-modal {
+    top: 3% !important;
+}
+
+.preloader-background {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+}
+
+.meeting-additional-data {
+    font-size: 18px;
+}
+
+.proposal-avatar {
+    width: var(--proposal-avatar-size);
+    height: var(--proposal-avatar-size);
+}
+
+.proposal .username {
+    font-size: 20px;
+}
+
+.speaker-proposals-collection .topic-title {
+    font-size: 18px;
+}
+
+.user-profile-avatar {
+    height: var(--user-profile-avatar-size);
+    width: var(--user-profile-avatar-size);
+    border: 5px solid white;
+}
+
+.food-item-wrapper {
+    padding: 10px !important;
+}
+
+.food-item-wrapper .food-item {
+    border-radius: 2px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    height: 300px;
+}
+
+.food-item-wrapper .food-item.add {
+    text-align: center;
+    font-size: 200px;
+}
+
+.food-item-wrapper .food-item .food-title {
+    padding: 5px 10px !important;
+    font-size: 18px;
+    font-family: 'Verdana', sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.food-item-wrapper .food-item .food-actions {
+    padding: 5px 10px !important;
+}
+
+.food-item-wrapper .food-item .food-price {
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.food-item-wrapper .food-item .food-price .food-price-value {
+    font-style: italic;
+}
+
+.food-item-wrapper .food-item .food-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.food-item-wrapper .food-item .presence-label, .cart .presence-label {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.food-item-wrapper .food-action:hover {
+    opacity: 1.0;
+}
+
+.food-item-wrapper .food-edit, .food-item-wrapper .food-delete {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.food-item-wrapper .food-edit i {
+    color: #2196F3;
+}
+
+.food-item-wrapper .food-delete i {
+    color: #F44336;
+}
+
+.food-item-wrapper .food-delete button {
+    border: none !important;
+    background: none !important;
+}
+
+ul.category-list li a {
+    display: block !important;
+    width: 100% !important;
+}
+
+ul.category-list li.selected, ul.category-list li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.food-container .image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+}
+
+.food-container .title {
+    font-size: 35px;
+    font-family: 'Verdana', sans-serif;
+    text-shadow: 1px 1px 2px #4db6ac;
+}
+
+.food-container .category {
+    font-size: 17px;
+    font-family: 'Verdana', sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.food-container .description {
+    font-size: 20px;
+    padding-top: 30px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.food-container .price {
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.food-container .price-value {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.food-container .cart {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.food-container .action-icon {
+    opacity: 0.5;
+    padding: 0 3px;
+    transition: all 0.5s;
+}
+
+.food-container .action-icon:hover {
+    opacity: 1;
+}
+
+.food-container .action-icon .update {
+    color: #2196F3;
+}
+
+.food-container .action-icon .delete {
+    color: #F44336;
+}
+
+.quantity-table-item .quantity-control {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0 5px;
+}
+
+.quantity-table-item .value {
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+.quantity-table-item .quantity-control.increase {
+    color: #4db6ac;
+}
+
+.quantity-table-item .quantity-control.decrease {
+    color: #F44336;
+}
+
+.order-form .personal-info {
+    margin-bottom: 30px;
+}
+
+.order-form .personal-info .personal-info-item {
+    padding: 0 10px;
+}
+
+.panel-option {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    margin: 10px 0;
+    padding: 10px 40px;
+    font-size: 40px;
+}
+
+.panel-option .arrow i {
+    font-size: 50px;
+}
+
+.orders-table .order-status {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.orders-table .order-status.pending {
+    color: #2196f3;
+}
+
+.orders-table .order-status.approved {
+    color: #4db6ac;
+}
+
+.orders-table .order-status.rejected {
+    color: #F44336;
+}
+
+.food-alert, .transaction-alert {
+    border-radius: 1px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-alert {
+    margin-top: 20px;
+}
